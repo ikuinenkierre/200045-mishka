@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка | Каталог товаров</title>
+  </head>
+  <body class="catalog-page">
+
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="page-header__logo-img" src="http://via.placeholder.com/86x35" width="86" height="35" alt="Магазин изделий ручной работы «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle toggle-button" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item  site-menu__item--active">
+            <a class="site-menu__link">Каталог товаров</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-title page-title--catalog-page">Каталог товаров</h1>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__img" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Фотография зайчика-попрыгайчика">
+              <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+              <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
+            </a>
+            <div class="catalog__purchase">
+              <span class="catalog__price">1 200 руб.</span>
+              <button class="catalog__cart" type="button">
+                <span class="visually-hidden">Заказать</span>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__img" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Фотография корзинки для белья">
+              <h3 class="catalog-item__title">Корзинка для белья</h3>
+              <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
+            </a>
+            <div class="catalog__purchase">
+              <span class="catalog__price">690 руб.</span>
+              <button class="catalog__cart" type="button">
+                <span class="visually-hidden">Заказать</span>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__img" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Фотография больщой корзинки для игрушек">
+              <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+              <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
+            </a>
+            <div class="catalog__purchase">
+              <span class="catalog__price">1 500 руб.</span>
+              <button class="catalog__cart" type="button">
+                <span class="visually-hidden">Заказать</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <article class="process">
+        <h2 class="process__title">Процесс производства</h2>
+        <video class="process__video" width="260" height="150"></video>
+        <p class="process__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a href="#" class="process__buy-btn btn">Заказать</a>
+      </article>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Мы в Инстаграме!</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке!</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в Твиттере!</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-footer__copyright copyright">
+        <h2 class="visually-hidden">Авторские права</h2>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </section>
+
+    </footer>
+
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal__fieldset form__fieldset">
+          <legend class="modal__legend">
+            Выберите размер:
+          </legend>
+          <label class="modal__label" for="small-input">S</label>
+          <input class="visually-hidden" type="radio" name="small" id="small-input">
+          <label class="modal__label" for="medium-input">M</label>
+          <input class="visually-hidden" type="radio" name="medium" id="medium-input">
+          <label class="modal__label" for="large-input">L</label>
+          <input class="visually-hidden" type="radio" name="large" id="large-input">
+        </fieldset>
+        <button class="modal__submit btn" type="submit">Добавить</button>
+      </form>
+    </div>
+
+  </body>
+</html>
