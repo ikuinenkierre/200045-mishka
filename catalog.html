@@ -119,5 +119,23 @@
 
     </footer>
 
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal__fieldset form__fieldset">
+          <legend class="modal__legend">
+            Выберите размер:
+          </legend>
+          <label class="modal__label" for="small-input">S</label>
+          <input class="visually-hidden" type="radio" name="small" id="small-input">
+          <label class="modal__label" for="medium-input">M</label>
+          <input class="visually-hidden" type="radio" name="medium" id="medium-input">
+          <label class="modal__label" for="large-input">L</label>
+          <input class="visually-hidden" type="radio" name="large" id="large-input">
+        </fieldset>
+        <button class="modal__submit btn" type="submit">Добавить</button>
+      </form>
+    </div>
+
   </body>
 </html>
