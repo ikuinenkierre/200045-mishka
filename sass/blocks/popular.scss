@@ -1,0 +1,53 @@
+.popular__wrapper {
+  padding-top: 25px;
+}
+
+.popular__title {
+  margin: $reset-default;
+  margin-bottom: 10px;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  color: $secondary-color;
+}
+
+.popular__subtitle {
+  margin: $reset-default;
+  margin-bottom: 35px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.popular__desc {
+  margin: $reset-default;
+  margin-bottom: 30px;
+}
+
+.popular__properties {
+  margin-bottom: 28px;
+}
+
+.popular__img {
+  margin-bottom: 25px;
+}
+
+.popular__purchase {
+  margin-bottom: 70px;
+}
+
+.popular__price {
+  margin: $reset-default;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: $line-height;
+  font-weight: bold;
+
+  text-align: center;
+}

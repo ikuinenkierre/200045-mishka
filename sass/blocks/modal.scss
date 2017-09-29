@@ -1,0 +1,66 @@
+.modal {
+  padding-top: 35px;
+
+  border-top: 1px solid #c7c7c7;
+}
+
+.modal__title {
+  margin: $reset-default;
+  margin-bottom: 20px;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.modal__fieldset {
+  padding: $reset-default;
+  margin: $reset-default;
+
+  border: none;
+}
+
+.modal__legend {
+  margin-bottom: 30px;
+
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.modal__btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.modal__label {
+  width: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+
+  text-align: center;
+
+  border: 2px solid #ececec;
+}
+
+.modal__submit {
+  width: 100%;
+  margin-bottom: 46px;
+
+  font-size: 17px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  background-color: #63d1bb;
+
+  border: none;
+}
