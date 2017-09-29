@@ -3,6 +3,10 @@
 }
 
 .catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
   padding-left: 28px;
   padding-right: 28px;
 }
@@ -12,13 +16,6 @@
   margin: $reset-default;
 
   list-style: $list-style;
-}
-
-.catalog__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 70px;
 }
 
 .catalog__price {
