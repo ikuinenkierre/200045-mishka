@@ -1,0 +1,46 @@
+.process {
+  margin-bottom: 58px;
+}
+
+.process__wrapper {
+  padding-left: $reset-default;
+  padding-right: $reset-default;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  border-top: $border;
+  border-bottom: $border;
+}
+
+.process__title {
+  margin: $reset-default;
+  padding-top: 25px;
+  padding-left: 90px;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: $line-height;
+
+  color: $secondary-color;
+}
+
+.process__video {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.process__text {
+  margin: $reset-default;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-bottom: 30px;
+
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.process__buy-btn {
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-bottom: 30px;
+}

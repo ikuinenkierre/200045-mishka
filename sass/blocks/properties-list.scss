@@ -1,0 +1,15 @@
+.properties-list {
+  border-collapse: collapse;
+}
+
+.properties-list__property {
+  line-height: 20px;
+
+  border-bottom: $border;
+
+  td {
+    height: 38px;
+
+    vertical-align: middle;
+  }
+}

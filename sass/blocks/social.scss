@@ -1,0 +1,32 @@
+.social__wrapper {
+  padding: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $reset-default;
+  margin: $reset-default;
+
+
+  list-style: $list-style;
+}
+
+.social__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin-right: 5px;
+}

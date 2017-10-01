@@ -1,0 +1,28 @@
+.products__list {
+  padding: $reset-default;
+  margin: $reset-default;
+
+  list-style: $list-style;
+}
+
+.products__section {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #63d1bb;
+}
+
+.products__section:nth-child(2n) {
+  background-color: #56c3b2;
+}
+
+.products__link {
+  position: relative;
+
+  font-size: 19px;
+  line-height: $line-height;
+  font-weight: bold;
+
+  color: #ffffff;
+}

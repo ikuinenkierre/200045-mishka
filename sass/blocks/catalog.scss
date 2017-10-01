@@ -1,0 +1,34 @@
+.catalog {
+  padding-top: 32px;
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.catalog__list {
+  padding: $reset-default;
+  margin: $reset-default;
+
+  list-style: $list-style;
+}
+
+.catalog__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog__cart {
+  width: 20px;
+  height: 20px;
+
+  background-image: url("/img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}

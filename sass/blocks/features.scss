@@ -1,0 +1,30 @@
+.features__title {
+  margin: $reset-default;
+  margin-bottom: 90px;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  color: $secondary-color;
+}
+
+.features__list {
+  padding: $reset-default;
+  margin: $reset-default;
+
+  list-style: $list-style;
+}
+
+.features__item {
+  margin-bottom: 85px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  color: $secondary-color;
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
