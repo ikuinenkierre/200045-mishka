@@ -4,3 +4,11 @@
 
   list-style: $list-style;
 }
+
+.slider__item {
+  display: none;
+}
+
+.slider__item:first-child {
+  display: block;
+}

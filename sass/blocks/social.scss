@@ -30,3 +30,19 @@
   height: 46px;
   margin-right: 5px;
 }
+
+@media (min-width: $tablet-width) {
+
+  .social__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+
+    border-bottom: none;
+  }
+
+  .copyright__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
