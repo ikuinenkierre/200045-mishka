@@ -33,7 +33,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .features {
     margin-bottom: 5px;
   }
@@ -55,11 +54,9 @@
     font-size: 20px;
     line-height: 22px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .features__wrapper {
     padding-left: 225px;
   }
@@ -76,5 +73,4 @@
   .features__list {
     padding-right: 0;
   }
-
 }

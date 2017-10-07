@@ -49,7 +49,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-header {
     border-bottom: $border;
   }
@@ -148,11 +147,9 @@
     margin-left: auto;
     padding-top: 20px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header__wrapper {
     width: 1050px;
     margin: 0 auto;
@@ -179,7 +176,6 @@
 
       font-size: 17px;
     }
-
   }
 
   .page-header__item--catalog .page-header__link {
@@ -210,5 +206,4 @@
       line-height: $line-height;
     }
   }
-
 }

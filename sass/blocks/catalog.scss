@@ -57,12 +57,12 @@
 }
 
 .catalog__purchase {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-    border-top: $border;
+  border-top: $border;
 }
 
 .catalog__price {
@@ -81,7 +81,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog {
     padding-top: 80px;
   }
@@ -122,11 +121,9 @@
   .catalog__price {
     font-size: 17px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .catalog {
     padding-top: 130px;
   }
@@ -165,5 +162,4 @@
     border-top: none;
     border-left: $border;
   }
-
 }

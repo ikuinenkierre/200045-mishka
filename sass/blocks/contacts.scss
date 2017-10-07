@@ -74,11 +74,9 @@
     width: 230px;
     margin: 0 auto;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts {
     position: relative;
     width: 1050px;
@@ -116,5 +114,4 @@
     right: 50px;
     width: calc(50% - 50px);
   }
-
 }
