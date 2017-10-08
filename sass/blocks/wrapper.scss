@@ -1,4 +1,24 @@
 .wrapper {
+  width: 260px;
+  margin: 0 auto;
+
   padding-left: $wrapper-padding;
   padding-right: $wrapper-padding;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    box-sizing: content-box;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

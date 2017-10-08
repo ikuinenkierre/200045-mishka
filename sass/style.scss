@@ -5,9 +5,9 @@
 @import "global.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/btn.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
-@import "blocks/site-menu.scss";
-@import "blocks/page-title.scss";
+@import "blocks/page-main.scss";
 @import "blocks/products.scss";
 @import "blocks/popular.scss";
 @import "blocks/properties-list.scss";
@@ -20,7 +20,5 @@
 @import "blocks/copyright.scss";
 @import "blocks/modal.scss";
 @import "blocks/catalog.scss";
-@import "blocks/catalog-item.scss";
 @import "blocks/process.scss";
-@import "blocks/form-page.scss";
 @import "blocks/form.scss";
