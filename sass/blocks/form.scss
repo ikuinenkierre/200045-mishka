@@ -130,6 +130,7 @@
   }
 
   .form__fieldset-wrapper {
+    box-sizing: border-box;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
