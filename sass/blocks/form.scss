@@ -55,9 +55,6 @@
 
 .form__list--radio {
   flex-direction: column;
-}
-
-.form__list--radio {
   padding-top: 33px;
 }
 
@@ -140,7 +137,7 @@
   width: 23px;
   height: 18px;
 
-  background-image: url(../../img/icon-tick.svg);
+  background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-poisition: center center;
   background-size: cover;

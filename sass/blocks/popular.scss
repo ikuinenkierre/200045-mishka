@@ -62,7 +62,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .popular__title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -120,11 +119,9 @@
   .popular__img {
     padding-top: 8px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .popular {
     margin-bottom: 154px;
   }
@@ -186,5 +183,4 @@
     top: -61px;
     right: 50px;
   }
-
 }
