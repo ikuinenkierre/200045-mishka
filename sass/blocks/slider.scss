@@ -21,7 +21,7 @@
   transform: scale(1);
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .slider__list {
     width: 668px;
     min-height: 235px;
@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .slider__list {
     width: 1050px;
     min-height: 200px;
