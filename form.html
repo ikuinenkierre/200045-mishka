@@ -12,7 +12,7 @@
       <div class="page-header__wrapper wrapper">
         <nav class="page-header__nav main-nav">
           <a class="page-header__logo main-nav__logo" href="index.html">
-            <img class="page-header__logo-img main-nav__logo-img" src="http://via.placeholder.com/86x35" width="86" height="35" alt="Магазин изделий ручной работы «Мишка»">
+            <img class="page-header__logo-img main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин изделий ручной работы «Мишка»">
           </a>
           <button class="page-header__toggle main-nav__toggle toggle-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -54,20 +54,22 @@
       <h1 class="page-main__title page-main__title--form-page">Вязание на заказ</h1>
       <div class="page-main__wrapper">
         <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__text">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-          </p>
+          <div class="form__text-wrapper">
+            <p class="form__text">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+          </div>
           <fieldset class="form__fieldset">
             <div class="form__fieldset-wrapper">
               <legend class="form__legend">Тип</legend>
               <ul class="form__list form__list--radio">
                 <li class="form__item">
+                  <input class="visually-hidden" type="radio" name="type" id="interior-filter" checked>
                   <label class="form__label" for="interior-filter">Аксессуар для интерьера</label>
-                  <input class="visually-hidden" type="radio" name="type" id="interior-filter">
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="toy-filter">Детская игрушка</label>
                   <input class="visually-hidden" type="radio" name="type" id="toy-filter">
+                  <label class="form__label" for="toy-filter">Детская игрушка</label>
                 </li>
               </ul>
             </div>
@@ -77,28 +79,28 @@
               <legend class="form__legend">Цвет</legend>
               <ul class="form__list form__list--checkbox">
                 <li class="form__item">
+                  <input class="visually-hidden" type="checkbox" name="white" id="white-filter" checked>
                   <label class="form__label" for="white-filter">Белый</label>
-                  <input class="visually-hidden" type="checkbox" name="white" id="white-filter">
                 </li>
                 <li class="form__item">
+                  <input class="visually-hidden" type="checkbox" name="gray" id="gray-filter" checked>
                   <label class="form__label" for="gray-filter">Серый</label>
-                  <input class="visually-hidden" type="checkbox" name="gray" id="gray-filter">
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="tiffany-filter">«Тиффани»</label>
                   <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany-filter">
+                  <label class="form__label" for="tiffany-filter">«Тиффани»</label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="black-filter">Черный</label>
                   <input class="visually-hidden" type="checkbox" name="black" id="black-filter">
+                  <label class="form__label" for="black-filter">Черный</label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="pink-filter">Розовый</label>
                   <input class="visually-hidden" type="checkbox" name="pink" id="pink-filter">
+                  <label class="form__label" for="pink-filter">Розовый</label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="orange-filter">Оранжевый</label>
                   <input class="visually-hidden" type="checkbox" name="orange" id="orange-filter">
+                  <label class="form__label" for="orange-filter">Оранжевый</label>
                 </li>
               </ul>
             </div>

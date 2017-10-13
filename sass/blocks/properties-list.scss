@@ -11,5 +11,9 @@
     height: 38px;
 
     vertical-align: middle;
+
+    &:first-child {
+      width: 93px;
+    }
   }
 }
