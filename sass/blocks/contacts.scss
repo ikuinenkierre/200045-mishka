@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .contacts__wrapper {
@@ -9,7 +9,7 @@
 
 .contacts__title {
   margin: $reset-default;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 30px;
@@ -21,9 +21,13 @@
 .contacts__item {
   display: flex;
   margin: $reset-default;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
 
   line-height: 30px;
+
+  &:last-child {
+    margin-bottom: 37px;
+  }
 }
 
 .contacts__name {
@@ -37,19 +41,26 @@
 .contacts__map {
   height: 457px;
   margin-bottom: 40px;
+
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .contacts__wrapper {
     width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
   }
 
   .contacts__title {
+    margin-left: -4px;
+    margin-bottom: 48px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -57,13 +68,23 @@
   .contacts__content-wrapper {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 
   .contacts__item {
     box-sizing: border-box;
     width: 50%;
     margin-bottom: 0;
+
+    font-size: 17px;
+  }
+
+  .contacts__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts__name {
+    margin-right: 23px;
   }
 
   .contacts__map {
@@ -87,12 +108,14 @@
   .contacts__wrapper {
     box-sizing: border-box;
     width: 50%;
-    padding-left: 175px;
+    padding-left: 182px;
+    padding-right: 44px;
     margin: 0;
   }
 
   .contacts__title {
-    padding-top: 75px;
+    padding-top: 71px;
+    margin-bottom: 47px;
 
     font-size: 53px;
     line-height: 57px;
@@ -100,12 +123,16 @@
 
   .contacts__content-wrapper {
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 79px;
   }
 
   .contacts__item {
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+  }
+
+  .contacts__name {
+    margin-right: 25px;
   }
 
   .contacts__map {
@@ -113,5 +140,10 @@
     top: 0;
     right: 50px;
     width: calc(50% - 50px);
+  }
+
+  .contacts__btn {
+    width: 227px;
+    margin: 0;
   }
 }

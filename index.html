@@ -12,7 +12,7 @@
       <div class="page-header__wrapper wrapper">
         <nav class="page-header__nav main-nav">
           <a class="page-header__logo main-nav__logo">
-            <img class="page-header__logo-img main-nav__logo-img" src="http://via.placeholder.com/86x35" width="86" height="35" alt="Магазин изделий ручной работы «Мишка»">
+            <img class="page-header__logo-img main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин изделий ручной работы «Мишка»">
           </a>
           <button class="page-header__toggle main-nav__toggle toggle-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -55,19 +55,17 @@
       <h1 class="page-main__title page-main__title--index">Милые штуки ручной<br> работы для дома</h1>
 
       <section class="products">
-        <h2 class="visually-hidden">Разделы каталога</h2>
-        <ul class="products__list">
-          <li class="products__section">
-            <div class="products__wrapper">
+        <div class="products__wrapper">
+          <h2 class="visually-hidden">Разделы каталога</h2>
+          <ul class="products__list">
+            <li class="products__section">
               <a class="products__link products__link--interior" href="catalog/interior.html">Предметы<br> интерьера</a>
-            </div>
-          </li>
-          <li class="products__section">
-            <div class="products__wrapper">
+            </li>
+            <li class="products__section">
               <a class="products__link products__link--toys" href="catalog/toys.html">Детские<br> игрушки</a>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <article class="popular">
@@ -103,7 +101,7 @@
               </div>
             </div>
             <div class="popular__img">
-              <img src="http://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки">
+              <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
             </div>
           </div>
         </div>
@@ -143,8 +141,8 @@
         <div class="reviews__wrapper wrapper">
           <div class="reviews__slider slider">
             <h2 class="reviews__title">Отзывы</h2>
-            <!-- <input class="reviews__visible-slide" type="radio" name="visible-slide" id="visible-slide-btn" checked> -->
             <ul class="reviews__list slider__list">
+              <input class="slider__visible-slide visually-hidden" type="radio" name="visible-slide" id="review-1" checked>
               <li class="reviews__item slider__item">
                 <blockquote class="reviews__quote">
                   <p class="reviews__text">
@@ -155,15 +153,16 @@
                     <a class="reviews__link" href="#">@misssssiskras</a>
                   </cite>
                 </blockquote>
-                <div class="reviews__controls">
-                  <button class="reviews__switch-btn reviews--prev" type="button">
+                <div class="reviews__controls slider__controls">
+                  <label for="review-3" class="reviews__switch-btn reviews--prev" type="button">
                     <span class="visually-hidden">Назад</span>
-                  </button>
-                  <button class="reviews__switch-btn reviews--next" type="button">
+                  </label>
+                  <label for="review-2" class="reviews__switch-btn reviews--next" type="button">
                     <span class="visually-hidden">Вперёд</span>
-                  </button>
+                  </label>
                 </div>
               </li>
+              <input class="slider__visible-slide visually-hidden" type="radio" name="visible-slide" id="review-2">
               <li class="reviews__item slider__item">
                 <blockquote class="reviews__quote">
                   <p class="reviews__text">
@@ -174,15 +173,16 @@
                     <a class="reviews__link" href="#">@misssssiskras</a>
                   </cite>
                 </blockquote>
-                <div class="reviews__controls">
-                  <button class="reviews__switch-btn reviews--prev" type="button">
+                <div class="reviews__controls slider__controls">
+                  <label for="review-1" class="reviews__switch-btn reviews--prev" type="button">
                     <span class="visually-hidden">Назад</span>
-                  </button>
-                  <button class="reviews__switch-btn reviews--next" type="button">
+                  </label>
+                  <label for="review-3" class="reviews__switch-btn reviews--next" type="button">
                     <span class="visually-hidden">Вперёд</span>
-                  </button>
+                  </label>
                 </div>
               </li>
+              <input class="slider__visible-slide visually-hidden" type="radio" name="visible-slide" id="review-3">
               <li class="reviews__item slider__item">
                 <blockquote class="reviews__quote">
                   <p class="reviews__text">
@@ -193,13 +193,13 @@
                     <a class="reviews__link" href="#">@misssssiskras</a>
                   </cite>
                 </blockquote>
-                <div class="reviews__controls">
-                  <button class="reviews__switch-btn reviews--prev" type="button">
+                <div class="reviews__controls slider__controls">
+                  <label for="review-2" class="reviews__switch-btn reviews--prev" type="button">
                     <span class="visually-hidden">Назад</span>
-                  </button>
-                  <button class="reviews__switch-btn reviews--next" type="button">
+                  </label>
+                  <label for="review-1" class="reviews__switch-btn reviews--next" type="button">
                     <span class="visually-hidden">Вперёд</span>
-                  </button>
+                  </label>
                 </div>
               </li>
             </ul>
@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img class="contacts__img" src="http://via.placeholder.com/322x457" alt="Карта с адресом">
+          <img class="contacts__img" src="img/map-mobile@1x.jpg" alt="Карта с адресом">
         </div>
         <div class="contacts__wrapper">
           <a class="contacts__btn btn" href="#">Напишите нам</a>

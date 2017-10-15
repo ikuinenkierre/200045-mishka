@@ -20,14 +20,14 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   .page-footer__logo {
-  display: block;
+    display: block;
   }
 }
 

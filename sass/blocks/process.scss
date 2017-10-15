@@ -1,12 +1,10 @@
 .process {
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 }
 
 .process__wrapper {
   padding-left: $reset-default;
   padding-right: $reset-default;
-  margin-left: 30px;
-  margin-right: 30px;
 
   border: $border;
 }
@@ -19,7 +17,7 @@
   position: absolute;
   top: -256px;
   margin: $reset-default;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-right: 33px;
   padding-left: 90px;
 
@@ -36,11 +34,12 @@
 
 .process__text {
   margin: $reset-default;
+  padding-top: 16px;
   padding-left: 33px;
-  padding-right: 33px;
-  margin-bottom: 30px;
+  padding-right: 40px;
+  margin-bottom: 24px;
 
-  font-size: $font-size;
+  font-size: 13px;
   line-height: $line-height;
 }
 
@@ -51,11 +50,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .process {
+    margin-bottom: 63px;
+  }
+
   .process__wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+
     border: none;
   }
 
   .process__video {
+    width: 668px;
+    height: 455px;
     margin-top: 0;
   }
 
@@ -67,26 +75,38 @@
     position: static;
 
     font-size: 20px;
-    padding-top: 38px;
-    margin-bottom: 25px;
+    padding-top: 32px;
+    padding-left: 106px;
+    margin-bottom: 15px;
 
     border-top: none;
   }
 
   .process__text {
-    margin-bottom: 40px;
+    padding-left: 39px;
+    padding-right: 35px;
+    margin-bottom: 36px;
 
+    font-size: $font-size;
     line-height: 30px;
   }
 
   .process__buy-btn {
+    margin-left: 41px;
+    margin-right: 41px;
     margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .process {
+    margin-bottom: 104px;
+  }
+
   .process__wrapper {
     display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .process__video {
@@ -97,17 +117,22 @@
     box-sizing: border-box;
     width: 367px;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 54px;
   }
 
   .process__title {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 94px;
+    margin-bottom: 17px;
   }
 
   .process__text {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 46px;
+
+    font-size: $font-size;
   }
 
   .process__buy-btn {
