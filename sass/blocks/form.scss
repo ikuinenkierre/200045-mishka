@@ -304,7 +304,7 @@
     top: 3px;
     left: 10px;
     width: 34px;
-    height: 22px;
+    height: 23px;
   }
 
   .form__list--radio .form__label,
@@ -430,35 +430,29 @@
     padding-right: 147px;
   }
 
+  .form__fieldset {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .form__fieldset-wrapper {
     width: 1050px;
     margin: 0 auto;
-    padding-left: 68px;
-    padding-right: 167px;
-  }
-
-  .form__fieldset:nth-of-type(1) .form__fieldset-wrapper {
-    padding-left: 72px;
-  }
-
-  .form__fieldset--color .form__fieldset-wrapper {
-    padding-right: 76px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__legend {
-    width: 144px;
-  }
-
-  .form__fieldset:nth-of-type(1) .form__legend {
-    width: 140px;
-  }
-
-  .form__fieldset--color .form__legend {
-    width: 129px;
+    padding-left: 63px;
+    width: 175px;
   }
 
   .form__list {
-    width: 875px;
+    width: 700px;
+  }
+
+  .form__fieldset--color .form__list {
+    width: 792px;
   }
 
   .form__list--checkbox .form__item {
