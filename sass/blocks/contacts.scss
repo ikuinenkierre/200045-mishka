@@ -10,6 +10,7 @@
 .contacts__title {
   margin: $reset-default;
   margin-bottom: 26px;
+  margin-left: -2px;
 
   font-size: 18px;
   line-height: 30px;
@@ -43,7 +44,21 @@
   margin-bottom: 40px;
 
   text-align: center;
+
+  background-image: url("/img/map-mobile@1x.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/map-mobile@2x.jpg");
+  }
+
+  iframe {
+    width: 322px;
+    height: 457px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .contacts {
@@ -51,14 +66,28 @@
   }
 
   .contacts__wrapper {
+    position: relative;
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
+
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      top: -16px;
+      right: 53px;
+      width: 47px;
+      height: 81px;
+
+      background-image: url("/img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
 
   .contacts__title {
-    margin-left: -4px;
+    margin-left: -5px;
     margin-bottom: 48px;
 
     font-size: 43px;
@@ -89,6 +118,16 @@
 
   .contacts__map {
     margin-bottom: 55px;
+
+    background-image: url("/img/map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/map-tablet@2x.jpg");
+    }
+
+    iframe {
+    width: 768px;
+    }
   }
 
   .contacts__btn {
@@ -111,6 +150,11 @@
     padding-left: 182px;
     padding-right: 44px;
     margin: 0;
+
+    &:first-child::before {
+      top: 62px;
+      left: 72px;
+    }
   }
 
   .contacts__title {
@@ -128,7 +172,7 @@
 
   .contacts__item {
     width: auto;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .contacts__name {
@@ -138,8 +182,17 @@
   .contacts__map {
     position: absolute;
     top: 0;
-    right: 50px;
-    width: calc(50% - 50px);
+    right: -7px;
+
+    background-image: url("/img/map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/map-desktop@2x.jpg");
+    }
+
+    iframe {
+    width: 525px;
+    }
   }
 
   .contacts__btn {

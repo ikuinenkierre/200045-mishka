@@ -11,16 +11,21 @@
   display: none;
 }
 
+.page-footer__logo-img {
+  width: 86px;
+  height: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
@@ -28,6 +33,12 @@
 
   .page-footer__logo {
     display: block;
+    margin-right: 82px;
+  }
+
+  .page-footer__logo-img {
+    width: 102px;
+    height: 34px;
   }
 }
 

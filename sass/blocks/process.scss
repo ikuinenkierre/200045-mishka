@@ -1,5 +1,5 @@
 .process {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .process__wrapper {
@@ -15,9 +15,8 @@
 
 .process__title {
   position: absolute;
-  top: -256px;
+  top: -221px;
   margin: $reset-default;
-  padding-top: 23px;
   padding-right: 33px;
   padding-left: 90px;
 
@@ -25,16 +24,35 @@
   line-height: $line-height;
 
   color: $secondary-color;
+  background-image: url("/img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 5px;
 }
 
 .process__video {
+  position: relative;
   height: 150px;
-  margin-top: 100px;
+  margin-top: 94px;
+}
+
+.process__btn {
+  position: absolute;
+  width: 100px;
+  height: 76px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -38px;
+
+  background-color: transparent;
+  background-image: url("/img/icon-play.svg");
+  background-repeat: no-repeat;
+  border: none;
 }
 
 .process__text {
   margin: $reset-default;
-  padding-top: 16px;
+  padding-top: 28px;
   padding-left: 33px;
   padding-right: 40px;
   margin-bottom: 24px;
@@ -46,7 +64,7 @@
 .process__buy-btn {
   margin-left: 33px;
   margin-right: 33px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,8 +73,9 @@
   }
 
   .process__wrapper {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
 
     border: none;
   }
@@ -73,19 +92,20 @@
 
   .process__title {
     position: static;
+    padding-top: 38px;
+    padding-left: 106px;
+    margin-bottom: 32px;
 
     font-size: 20px;
-    padding-top: 32px;
-    padding-left: 106px;
-    margin-bottom: 15px;
-
     border-top: none;
+    background-position: 40px 33px;
   }
 
   .process__text {
+    padding-top: 0;
     padding-left: 39px;
     padding-right: 35px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 
     font-size: $font-size;
     line-height: 30px;
@@ -105,8 +125,6 @@
 
   .process__wrapper {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
   .process__video {
@@ -124,7 +142,9 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 94px;
-    margin-bottom: 17px;
+    margin-bottom: 33px;
+
+    background-position: 1px 40px;
   }
 
   .process__text {

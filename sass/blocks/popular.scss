@@ -1,3 +1,20 @@
+.popular__wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -160px;
+    left: 0;
+    width: 320px;
+    height: 6px;
+
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 6px;
+  }
+}
+
 .popular__title-wrapper {
   margin-bottom: 22px;
 }
@@ -35,7 +52,7 @@
 
 .popular__purchase {
   position: absolute;
-  bottom: -443px;
+  bottom: -441px;
   width: 100%;
 }
 
@@ -47,7 +64,12 @@
 .popular__properties {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
+}
+
+.popular__img img {
+  width: 260px;
+  height: 315px;
 }
 
 .popular__price {
@@ -62,6 +84,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .popular__wrapper::before {
+    bottom: -62px;
+    width: 768px;
+    height: 15px;
+
+    background-size: 100% 15px;
+  }
+
   .popular__title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -70,7 +100,7 @@
   }
 
   .popular__title {
-    margin-left: -2px;
+    margin-left: -4px;
 
     font-size: 43px;
     line-height: 50px;
@@ -84,7 +114,7 @@
   }
 
   .popular__desc-wrapper {
-    margin-bottom: 118px;
+    margin-bottom: 113px;
   }
 
   .popular__text-wrapper,
@@ -119,6 +149,11 @@
   .popular__img {
     padding-top: 8px;
   }
+
+  .popular__img img {
+    width: 333px;
+    height: 404px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -126,8 +161,8 @@
     margin-bottom: 154px;
   }
 
-  .popular__wrapper {
-    position: relative;
+  .popular__wrapper::before {
+    display: none;
   }
 
   .popular__title-wrapper {
@@ -152,18 +187,26 @@
   }
 
   .popular__desc-wrapper {
+    position: relative;
     box-sizing: border-box;
-    width: 50%;
     padding-left: 175px;
-  }
 
-  .popular__text-wrapper,
-  .popular__img {
-    width: auto;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -96px;
+      width: 1050px;
+      height: 23px;
+
+      background-image: url("/img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: 100% 23px;
+    }
   }
 
   .popular__text-wrapper {
-    padding-right: 58px;
+    padding-right: 146px;
   }
 
   .popular__desc {
@@ -180,7 +223,14 @@
 
   .popular__img {
     position: absolute;
-    top: -61px;
-    right: 50px;
+    top: -166px;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
+
+  .popular__img img {
+    width: 625px;
+    height: 636px;
   }
 }

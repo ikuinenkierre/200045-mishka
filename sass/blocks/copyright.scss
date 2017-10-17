@@ -1,10 +1,13 @@
 .copyright {
-  padding-top: 25px;
+  padding-top: 16px;
   padding-bottom: 20px;
 }
 
 .copyright__wrapper {
-  margin-left: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 37px;
   margin-right: 40px;
 }
 
@@ -16,8 +19,26 @@
   color: $secondary-color;
 }
 
+.copyright__img {
+  display: block;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
-    padding-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .copyright__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .copyright__link {
+    margin-left: 24px;
   }
 }
