@@ -5,10 +5,8 @@
 
 .form__text-wrapper {
   box-sizing: border-box;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .form__text {
@@ -167,12 +165,24 @@
   width: 100%;
   padding-top: 14px;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.form__input--phone {
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px top 7px;
+}
+
+.form__input--email {
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right 4px top 7px;
 }
 
 .form__list--text-input .form__textarea {
@@ -361,10 +371,12 @@
 
   .form__fieldset--phone .form__input {
     margin-bottom: 6px;
+    background-position: right 24px top 0;
   }
 
-  .form__fieldset--email .form__input--email {
+  .form__fieldset--email .form__input {
     margin-bottom: 17px;
+    background-position: right 20px top -2px;
   }
 
   .form__fieldset--email .form__legend,
@@ -451,6 +463,10 @@
     width: 700px;
   }
 
+  .form__fieldset--phone .form__list--text-input {
+    padding-top: 58px;
+  }
+
   .form__fieldset--color .form__list {
     width: 792px;
   }
@@ -476,5 +492,16 @@
 
   .form__fieldset--add {
     padding-bottom: 8px;
+  }
+
+  .form__fieldset--phone .form__input {
+    margin-bottom: 0;
+    padding-top: 5px;
+    background-position: right 8px top 3px;
+  }
+
+  .form__fieldset--email .form__input {
+    padding-top: 5px;
+    background-position: right 4px top 2px;
   }
 }

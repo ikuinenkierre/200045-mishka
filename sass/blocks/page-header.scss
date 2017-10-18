@@ -12,12 +12,23 @@
   text-align: center;
 }
 
+.page-header__logo-img {
+  width: 86px;
+  height: 36px;
+}
+
 .page-header__toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 30px;
-  right: 0;
+  top: 29px;
+  right: 1px;
+
+  background-color: transparent;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
 }
 
 .page-header__pages-list,
@@ -28,6 +39,7 @@
 }
 
 .page-header__link {
+  position: relative;
   display: block;
   padding-top: 28px;
   padding-bottom: 27px;
@@ -38,10 +50,36 @@
   font-weight: bold;
 
   color: $secondary-color;
+  z-index: 20;
+
+  &--search::before,
+  &--cart::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 18px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--search::before {
+    width: 18px;
+
+    background-image: url("../../img/icon-search.svg");
+  }
+
+  &--cart::before {
+    width: 21px;
+
+    background-image: url("../../img/icon-cart.svg");
+  }
 }
 
 .page-header__item--delivery {
   display: none;
+
+  z-index: 20;
 }
 
 .page-header__bestsellers-list {
@@ -68,9 +106,17 @@
 
   .page-header__logo {
     width: 200px;
+    padding-top: 8px;
+    padding-bottom: 0;
     margin: 0;
+    margin-left: -1px;
 
     text-align: left;
+  }
+
+  .page-header__logo-img {
+    width: 112px;
+    height: 48px;
   }
 
   .page-header__toggle {
@@ -120,6 +166,11 @@
     min-width: 82px;
     border-left: $border;
     border-right: $border;
+
+    &::before {
+      top: 36px;
+      left: 32px;
+    }
   }
 
   .page-header__link--search span {
@@ -140,6 +191,12 @@
     padding-left: 84px;
 
     text-align: right;
+
+    &::before {
+      top: 35px;
+      left: 32px;
+      height: 19px;
+    }
   }
 
   .page-header__item--delivery {
@@ -159,13 +216,20 @@
   .page-header__logo {
     order: 2;
     width: auto;
+    padding-top: 5px;
+    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .page-header__logo-img {
+    width: 149px;
+    height: 73px;
+  }
+
   .page-header__pages-list {
     order: 1;
-    width: 430px;
+    width: 440px;
 
     .page-header__link {
       height: 90px;
