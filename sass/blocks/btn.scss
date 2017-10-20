@@ -15,4 +15,13 @@
   text-transform: uppercase;
 
   cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active span  {
+    opacity: 0.3;
+  }
 }

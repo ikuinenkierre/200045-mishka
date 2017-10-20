@@ -33,7 +33,15 @@
 
   .page-footer__logo {
     display: block;
-    margin-right: 82px;
+    margin-right: 107px;
+  }
+
+  .page-footer__logo[href]:hover .page-footer__icon {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo[href]:active .page-footer__icon {
+    opacity: 0.3;
   }
 
   .page-footer__logo-img {

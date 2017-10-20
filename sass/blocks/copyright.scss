@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 20px;
 }
 
@@ -8,10 +8,13 @@
   align-items: center;
   justify-content: space-between;
   margin-left: 37px;
-  margin-right: 40px;
+  margin-right: 39px;
 }
 
 .copyright__text {
+  padding-top: 3px;
+  padding-right: 31px;
+
   font-size: 19px;
   line-height: 19px;
   font-weight: bold;
@@ -19,10 +22,24 @@
   color: $secondary-color;
 }
 
-.copyright__img {
-  display: block;
-  margin-top: 5px;
-  margin-left: 5px;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__logo {
+  margin-top: 7px;
+
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: #46c1ae;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

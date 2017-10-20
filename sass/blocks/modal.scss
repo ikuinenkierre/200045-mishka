@@ -7,7 +7,11 @@
   height: 100%;
 
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10;
+  z-index: 50;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__window {
@@ -83,6 +87,18 @@
   text-align: center;
 
   border: 2px solid #ececec;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+}
+
+input:active + .modal__label {
+  border-color: #62d1ba;
+}
+
+input:checked + .modal__label {
+  border-color: #62d1ba;
 }
 
 .modal__submit {
