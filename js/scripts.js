@@ -32,5 +32,3 @@ overlay.addEventListener("click", function (evt) {
 modalWindow.addEventListener("click", function (evt) {
     event.stopPropagation();
 });
-
-
