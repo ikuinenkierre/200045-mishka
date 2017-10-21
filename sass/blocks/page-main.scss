@@ -1,5 +1,5 @@
 .page-main__title {
-  padding-top: 71px;
+  padding-top: 69px;
   padding-bottom: 75px;
   margin: $reset-default;
 
@@ -19,6 +19,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center -17px;
   background-size: 575px 371px;
+  background-color: $secondary-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -49,7 +50,7 @@
     position: relative;
     padding-top: 95px;
     padding-bottom: 78px;
-    padding-left: 15px;
+    padding-left: 16px;
     padding-right: 0;
 
     font-size: 43px;
@@ -104,6 +105,7 @@
   .page-main__title--index {
     padding-top: 0;
     padding-bottom: 374px;
+    padding-left: 0;
 
     &::before {
       background-image: none;
@@ -114,9 +116,9 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     padding-top: 94px;
-    padding-left: 19px;
     padding-right: 0;
     padding-bottom: 107px;
+    padding-left: 19px;
 
     font-size: 53px;
     line-height: 57px;
@@ -134,7 +136,7 @@
     padding-top: 153px;
 
     background-image: url("../img/hero-desktop@2x.jpg");
-    background-position: 42% 0%;
+    background-position: 50% 0%;
     background-size: 1244px 743px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
