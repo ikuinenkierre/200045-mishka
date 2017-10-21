@@ -24,9 +24,9 @@
   line-height: $line-height;
 
   color: $secondary-color;
-  background-image: url("../../img/icon-video.svg");
+  background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
-  background-position: 33px 5px;
+  background-position: 35px 5px;
 }
 
 .process__video {
@@ -45,15 +45,24 @@
   margin-top: -38px;
 
   background-color: transparent;
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   border: none;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .process__text {
   margin: $reset-default;
   padding-top: 28px;
-  padding-left: 33px;
+  padding-left: 35px;
   padding-right: 40px;
   margin-bottom: 24px;
 
@@ -62,7 +71,8 @@
 }
 
 .process__buy-btn {
-  margin-left: 33px;
+  padding-top: 15px;
+  margin-left: 35px;
   margin-right: 33px;
   margin-bottom: 32px;
 }
@@ -120,7 +130,7 @@
 
 @media (min-width: $desktop-width) {
   .process {
-    margin-bottom: 104px;
+    margin-bottom: 105px;
   }
 
   .process__wrapper {

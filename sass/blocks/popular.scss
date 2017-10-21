@@ -9,7 +9,7 @@
     width: 320px;
     height: 6px;
 
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 100% 6px;
   }
@@ -175,6 +175,7 @@
   .popular__title {
     order: 2;
     margin-bottom: 0;
+    margin-left: -2px;
 
     font-size: 53px;
     line-height: 57px;
@@ -199,7 +200,7 @@
       width: 1050px;
       height: 23px;
 
-      background-image: url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
       background-size: 100% 23px;
     }
