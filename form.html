@@ -26,10 +26,10 @@
               <img class="page-header__logo-img main-nav__logo-img" src="img/logo-mobile.svg" alt="Магазин изделий ручной работы «Мишка»">
             </picture>
           </a>
-          <button class="page-header__toggle main-nav__toggle" type="button">
+          <button class="page-header__toggle main-nav__toggle page-header__toggle--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="page-header__pages-list main-nav__pages-list">
+          <ul class="page-header__pages-list main-nav__pages-list page-header__pages-list--no-js page-header__pages-list--hide">
             <li class="page-header__item main-nav__item page-header__item--catalog">
               <a class="page-header__link main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -37,7 +37,7 @@
               <a class="page-header__link main-nav__link">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="page-header__user-list  main-nav__user-list">
+          <ul class="page-header__user-list  main-nav__user-list page-header__user-list--no-js page-header__user-list--hide">
             <li class="page-header__item main-nav__item">
               <a class="page-header__link main-nav__link page-header__link--search" href="#">
                 <svg class="page-header__icon" width="17" height="17">
@@ -241,6 +241,8 @@
         </section>
       </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
