@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 87px;
+  margin-bottom: 85px;
 }
 
 .reviews__wrapper {
@@ -8,7 +8,7 @@
   &::before {
     position: absolute;
     content: "";
-    bottom: -52px;
+    bottom: -49px;
     left: 0;
     width: 320px;
     height: 6px;
@@ -85,7 +85,7 @@
   border: $border;
 }
 
-.reviews--next {
+.reviews__switch-btn--next {
   margin-left: -1px;
 }
 
@@ -93,7 +93,7 @@
   position: absolute;
   width: 50px;
   height: 26px;
-  top: 13px;
+  top: 11px;
   left: 38px;
 }
 
@@ -107,7 +107,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 93px;
+    margin-bottom: 62px;
   }
 
   .reviews__title {
@@ -127,7 +127,7 @@
     background-position: top left;
 
     &::before {
-      bottom: -31px;
+      bottom: 0;
       width: 768px;
       height: 15px;
 
@@ -163,7 +163,7 @@
 
   .reviews__controls {
     position: absolute;
-    bottom: 32px;
+    bottom: 2px;
     right: 0;
     width: 180px;
     margin-bottom: 0;
@@ -188,7 +188,7 @@
     box-sizing: border-box;
     width: 1050px;
     padding-left: 175px;
-    padding-bottom: 83px;
+    padding-bottom: 52px;
 
     &::before {
       bottom: -91px;
@@ -213,6 +213,7 @@
 
   .reviews__controls {
     right: -100px;
+    bottom: 15px;
   }
 
   .reviews__btn {
