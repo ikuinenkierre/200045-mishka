@@ -69,7 +69,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest(build + "/"));
+    .pipe(gulp.dest(build));
 });
 
 gulp.task("copy", function () {
@@ -80,11 +80,11 @@ gulp.task("copy", function () {
   ], {
     base: "."
   })
-  .pipe(gulp.dest(build + "/"));
+  .pipe(gulp.dest(build));
 });
 
 gulp.task("clean", function () {
-  return del(build + "/");
+  return del(build);
 });
 
 gulp.task("serve", function() {
